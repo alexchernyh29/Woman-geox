@@ -1,0 +1,161 @@
+.result
+    position relative
+    min-height 100vh
+    height 100%
+    background url('/images/result_bg.jpg') no-repeat center
+    background-size cover
+    +below(1200px)
+        background url('/images/result_bg-mobile.jpg') 0 0/100% no-repeat
+        height 100%
+        min-height wm(800)
+        background-size cover
+
+    &__foto
+        position absolute
+        z-index 2
+        left w(400)
+        bottom w(0)
+        img
+            width w(550)
+            +below(1200px)
+                width wm(450)
+        +below(1200px)
+            left wm(30)
+
+    &__gerilax
+        position absolute
+        top w(50)
+        left w(100)
+        img
+            width w(245)
+        +below(1200px)
+            display none
+
+    &__content
+        position absolute
+        bottom 10%
+        left w(640)
+        width w(1100)
+        height w(710)
+        border w(10) solid #FFF
+        border-radius w(15)
+        background linear-gradient(180deg, #FFF669 17.87%, #FFD105 100%)
+        text-align center
+        +below(1200px)
+            bottom 10%
+            width wm(910)
+            height wm(590)
+            left wm(220)
+
+    &__wrap
+        padding-top w(30)
+        padding-right w(110)
+        margin-left auto
+        position relative
+        display flex
+        flex-direction column
+        width 70%
+        +below(1200px)
+            padding-top wm(40)
+            padding-right wm(60)
+            width 70%
+
+    &__heading
+        padding-top w(15)
+        font-family $ff-FuturaPTDemi
+        font-style normal
+        font-weight bold
+        font-size w(72)
+        line-height w(72)
+        text-align center
+        letter-spacing 0.03em
+        color $c-black
+        +below(1200px)
+            font-size wm(64)
+            line-height wm(72)
+
+    &__answer
+        padding-top w(20)
+        font-family $ff-FuturaPT
+        font-style normal
+        font-weight bold
+        font-size w(48)
+        line-height w(42)
+        text-align center
+        letter-spacing 0.03em
+        color $c-black
+        +below(1200px)
+            font-style normal
+            font-weight bold
+            font-size wm(39)
+            line-height wm(42)
+            padding-top wm(15)
+
+    &__text
+        padding-top w(20)
+        font-family $ff-FuturaPTDemi
+        font-style normal
+        font-weight bold
+        font-size w(24)
+        line-height w(24)
+        text-align center
+        letter-spacing 0.03em
+        color $c-black
+        +below(1200px)
+            padding-top wm(15)
+            font-size wm(18)
+            line-height wm(21)
+
+    &__recommendation
+        padding-top w(30)
+        font-family $ff-FuturaPTDemi
+        font-weight bold
+        font-size w(24)
+        line-height w(24)
+        text-align center
+        letter-spacing 0.03em
+        color $c-black
+        span
+            font-family $ff-FuturaPTLight
+            font-weight bold
+        +below(1200px)
+            padding-top wm(30)
+            font-size wm(18)
+            line-height wm(21)
+
+    &__sharing
+        padding-top w(35)
+        .sharing
+            text-align center
+        .sharing__list
+            display inline-flex
+        +below(1200px)
+            font-size w(64)
+            line-height w(72)
+
+    &__actions
+        margin-top w(20)
+        text-align center
+
+    &__restart
+        position relative
+        width w(300)
+        height w(70)
+        font-weight 500
+        font-size w(28)
+        line-height w(28)
+        text-align center
+        letter-spacing 0.02em
+        text-transform uppercase
+        background $c-gradindex
+        border-radius w(15)
+        color $c-black
+        +below(800px)
+            font-size wm(23)
+            line-height wm(28)
+            margin-top wm(20)
+            margin-right wm(70)
+            width wm(240)
+            height wm(60)
+            left wm(325)
+            bottom wm(75)

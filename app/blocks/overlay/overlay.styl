@@ -1,0 +1,35 @@
+.overlay
+    top 0
+    left 0
+    bottom 0
+    right 0
+    position fixed
+    flex-direction column
+    justify-content space-around
+    background url('/images/overlay_bg.jpg') no-repeat center
+    background-size cover
+    display none
+    z-index 10
+
+    &.is-active
+        display flex
+
+    &__text
+        text-align center
+        font-family $ff-FuturaPT
+        font-style normal
+        font-weight 300
+        font-size w(144)
+        line-height w(144)
+        letter-spacing 0.03em
+        color $c-black
+    
+    &__caveat
+        text-align center
+        font-family $ff-FuturaPT
+        font-style normal
+        font-weight bold
+        font-size w(144)
+        line-height w(144)
+        letter-spacing 0.03em
+        color $c-black

@@ -1,0 +1,108 @@
+.popup
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100vh
+    background rgba(0, 0, 0, 0.7)
+    background-size cover
+    display none
+    z-index 5
+
+    &.is-active
+        display block
+
+    &__foto
+        position absolute
+        z-index 2
+        left w(195)
+        bottom w(0)
+        img
+            width w(540)
+            +below(1200px)
+                width wm(335)
+        +below(1200px)
+            left wm(150)
+
+    &__content
+        position absolute
+        bottom 20%
+        left w(420)
+        width w(1190)
+        min-height w(300)
+        border w(10) solid #FFF
+        border-radius w(15)
+        background linear-gradient(180deg, #FFF669 17.87%, #FFD105 100%)
+        text-align center
+        +below(1200px)
+            bottom 10%
+            width wm(800)
+            min-height wm(300)
+
+    &__chapter
+        font-family $ff-FuturaPTDemi
+        font-weight 700
+        margin-top w(30)
+        font-size w(96)
+        line-height w(144)
+        text-transform uppercase
+        letter-spacing 0.03em
+        span
+            font-family $ff-FuturaPTLight
+            font-weight 400
+        +below(1200px)
+            margin-left wm(10)
+
+    &__text
+        font-family $ff-FuturaPTLight
+        text-align center
+        font-weight 600
+        width w(620)
+        margin-left w(290)
+        font-size w(27)
+        line-height w(24)
+        letter-spacing 0.03em
+        +below(1200px)
+            font-size wm(20)
+            line-height wm(23)
+            width wm(500)
+            margin-left wm(230)
+
+    &__cross
+        position absolute
+        right w(25)
+        top w(25)
+        cursor pointer
+        transition opacity .3s
+        &:hover
+            opacity .7
+        img
+            width w(40)
+        +below(1200px)
+            right wm(25)
+            top wm(25)
+
+    &__sharing
+        position absolute
+        left w(420)
+        bottom w(50)
+        +below(1200px)
+            bottom wm(20)
+            left wm(315)
+
+    &__actions
+        margin-top 20px
+        margin-bottom 20px
+
+    &__button
+        width w(300)
+        height w(70)
+        font-weight 500
+        font-size w(28)
+        line-height w(28)
+        text-align center
+        letter-spacing 0.02em
+        text-transform uppercase
+        background $c-gradindex
+        border-radius w(15)
+        color $c-black

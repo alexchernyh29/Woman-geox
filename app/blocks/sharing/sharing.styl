@@ -1,0 +1,57 @@
+.sharing
+    position relative
+
+    &__list
+        display flex
+        flex-flow row
+
+    &__item
+        margin-left w(20)
+        position relative
+        width w(55)
+        height w(55)
+        background $c-white
+        border-radius 50%
+        transition opacity .3s
+        +below(1200px)
+            margin-left wm(15)
+            width wm(55)
+            height wm(55)
+
+        &:hover
+            opacity .7
+    
+        &:first-child
+            margin-left 0
+
+    &__link
+        display inline-block
+        height 100%
+        width 100%
+        border-radius 50%
+
+    &__icon
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
+
+        &_fb
+            width w(40)
+            +below(1200px)
+                width wm(40)
+
+        &_vk
+            width w(40)
+            +below(1200px)
+                width wm(40)
+        
+        &_tw
+            width w(40)
+            +below(1200px)
+                width wm(40)
+
+        &_od
+            width w(40)
+            +below(1200px)
+                width wm(40)

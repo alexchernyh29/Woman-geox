@@ -1,0 +1,31 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+
+html,
+body
+    height 100%
+
+body
+    &.overflow
+        overflow hidden !important
+
+    .test, .result, .promo, #fullpage
+        display none
+
+    &.show-test
+        .index
+            display none
+        .test
+            display block
+        
+    &.show-result
+        .index
+            display none
+        .promo, .result, #fullpage
+            display block

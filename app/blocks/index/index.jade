@@ -1,0 +1,13 @@
+mixin index()
+
+    +b('section').index
+        +e.gerilax
+            img(src='/images/gerilax.png')
+        +e.maxim
+            img(src='/images/maxim.png')
+        +e.sharing
+            +sharing()
+        +e.wrap
+            +e.heading ДАСТ <span>vs.</span><br><span>НЕ</span> ДАСТ
+            +e.text Как часто мы, мужчины, задаёмся вопросом: эта даст или не даст? Эммм, мы про энергию, а ты про что подумал?)
+            +e('button').button узнать

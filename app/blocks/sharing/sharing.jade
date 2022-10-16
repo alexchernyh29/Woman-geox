@@ -1,0 +1,17 @@
+mixin sharing(isShowTitle)
+
+    +b.sharing
+        +e('ul').list
+            +e('li').item
+                +e('a').link(href='#')
+                    +e(src=`/images/tv.svg`).icon._vk
+            +e('li').item
+                +e('a').link(href='#')
+                    +e(src=`/images/od.svg`).icon._tw
+            +e('li').item
+                +e('a').link(href='#')
+                    +e(src=`/images/fb.svg`).icon._fb
+            +e('li').item
+                +e('a').link(href='#')
+                    +e(src=`/images/vk.svg`).icon._od
+            

@@ -1,0 +1,15 @@
+mixin test()
+
+    +b('section').test()
+        +e.wrap
+            +e('p').title КТО ДАСТ ТЕБЕ <br> ЭНЕРГИЮ?
+            +e('ul').list
+                +e('li').item(data-id='А')
+                    +e.sign
+                        +e('p').text._1 Кофе
+                        +e('img src="images/coffee.png"').foto_1
+                +e('li').item(data-id='Б')
+                    +e.sign
+                        +e('p').text._2 Чай
+                        +e('img src="images/tea.png"').foto_2
+                +e.counter <span>1</span>/7 

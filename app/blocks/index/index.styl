@@ -1,0 +1,113 @@
+.index
+    position relative
+    min-height 100vh
+    background url('/images/index_bg.jpg') no-repeat center
+    background-size cover
+    +below(800px)
+        background url('/images/index_bg-mobile.jpg') 0 0/100% no-repeat
+        height auto
+        min-height 100vh
+        background-size cover
+        padding-bottom wm-index(50)
+
+    &__gerilax
+        position absolute
+        top w(50)
+        left w(100)
+        img
+            width w(245)
+        +below(800px)
+            top wm-index(55)
+            left wm-index(70)
+            img
+                width wm-index(245)
+
+    &__maxim
+        position absolute
+        top w(50)
+        right w(195)
+        img
+            width w(185)
+        +below(800px)
+            top wm-index(60)
+            right wm-index(120)
+            img
+                width wm-index(185)
+
+    &__sharing
+        position absolute
+        left w(100)
+        bottom w(30)
+        +below(800px)
+            bottom 0
+            left wm-index(400)
+
+    &__wrap
+        padding-top w(215)
+        padding-right w(200)
+        position relative
+        display flex
+        flex-direction column
+        justify-content flex-end
+        margin-left auto
+        width 45%
+        +below(800px)
+            width 100%
+            padding-left wm-index(50)
+            padding-top wm-index(170)
+            padding-right wm-index(25)
+            align-items flex-end
+    
+    &__heading
+        font-family $ff-FuturaPTDemi
+        font-style normal
+        font-weight bold
+        font-size w(144)
+        line-height w(144)
+        letter-spacing 0.03em
+        color $c-black
+        span
+            font-family $ff-FuturaPT
+            font-weight normal
+        +below(800px)
+            font-size wm-index(144)
+            line-height wm-index(144)
+            text-align center
+            padding-right wm-index(50)
+    
+    &__text
+        padding-top w(10)
+        padding-bottom w(20)
+        font-family $ff-FuturaPT
+        font-style normal
+        width w(530)
+        font-weight 300
+        font-size w(36)
+        line-height w(42)
+        letter-spacing 0.03em
+        color $c-black
+        +below(800px)
+            font-size wm-index(36)
+            line-height wm-index(42)
+            width wm-index(370)
+            padding-top wm-index(70)
+
+    &__button
+        width w(300)
+        height w(70)
+        font-weight 500
+        font-size w(28)
+        line-height w(28)
+        text-align center
+        letter-spacing 0.02em
+        text-transform uppercase
+        background $c-gradindex
+        border-radius w(15)
+        color $c-black
+        +below(800px)
+            font-size wm-index(28)
+            line-height wm-index(28)
+            margin-top wm-index(20)
+            margin-right wm-index(70)
+            width wm-index(300)
+            height wm-index(70)

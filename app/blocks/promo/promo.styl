@@ -1,0 +1,145 @@
+.promo
+    min-height 100vh
+    background url('/images/promo_bg.jpg') no-repeat center
+    background-size cover
+    position relative
+    overflow hidden
+    +below(1200px)
+        background url('/images/promo_bg-mobile.jpg') 0 0/100% no-repeat
+        height auto
+        min-height 100vh
+        background-size cover
+
+    &__product
+        position absolute
+        left w(0)
+        bottom -3px
+        width w(600)
+        .promo__annotation
+            display none
+            +below(1200px)
+                display block
+                position absolute
+                bottom 0
+                left wm(10)
+                font-weight 300
+                font-size wm(8)
+                line-height wm(10)
+                width wm(230)
+                color $c-yellow
+        +below(1200px)
+            width wm(500)
+        img
+            width 100%
+
+    &__gerilax
+        position absolute
+        top w(50)
+        left w(100)
+        img
+            width w(245)
+        +below(1200px)
+            top wm(25)
+            left wm(40)
+            img
+                width wm(310)
+
+
+    &__maxim
+        position absolute
+        top w(50)
+        right w(195)
+        img
+            width w(185)
+        +below(1200px)
+            display none
+
+    &__heading
+        padding-top w(115)
+        padding-left w(450)
+        font-family $ff-FuturaPTDemi
+        font-style normal
+        font-weight bold
+        font-size w(72)
+        line-height w(72)
+        letter-spacing 0.03em
+        color $c-black
+        +below(1200px)
+            padding-top wm(20)
+            padding-left wm(440)
+            font-size wm(46)
+            line-height 1.2
+
+    &__wrap
+        padding-right w(310)
+        margin-left auto
+        position relative
+        display flex
+        flex-direction column
+        justify-content flex-end
+        width 60%
+        +below(1200px)
+            padding-right wm(107)
+            width 100%
+            align-items flex-end
+        .promo__annotation
+            padding-top w(20)
+            +below(1200px)
+                display none
+
+    &__text
+        padding-top w(30)
+        font-family $ff-FuturaPTLight
+        font-style normal
+        font-weight 700
+        font-size w(24)
+        line-height w(24)
+        letter-spacing 0.03em
+        color $c-black
+        +below(1200px)
+            width wm(580)
+            padding-top wm(50)
+            font-size wm(18)
+            line-height wm(21)
+            letter-spacing 0.03em
+
+
+    &__button
+        margin-top w(25)
+        width w(720)
+        height w(70)
+        background $c-gradindex
+        border-radius w(15)
+        color $c-black
+        span
+            font-family $ff-FuturaPT
+            font-style normal
+            font-size w(28)
+            line-height w(28)
+            text-align center
+            font-weight 700
+            letter-spacing 0.02em
+            text-transform uppercase
+        +below(1200px)
+            margin-top wm(80)
+            width wm(595)
+            height wm(60)
+            span
+                font-family $ff-FuturaPTDemi
+                font-style normal
+                font-weight bold
+                font-size wm(21)
+                line-height wm(28)
+                text-align center
+                font-weight 500
+                letter-spacing 0.02em
+                text-transform uppercase
+
+    &__annotation
+        font-family $ff-Roboto
+        font-style normal
+        font-weight 300
+        font-size w(10)
+        line-height w(11)
+        color $c-black
+        opacity 0.75
